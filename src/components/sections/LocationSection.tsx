@@ -1,19 +1,19 @@
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
 const LocationSection = () => {
-  // Replace with actual Google Maps embed URL
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976568217886!2d-46.65512768502178!3d-23.56140998468096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr";
+  // Google Maps embed URL for Barbacena - MG
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59582.89599567812!2d-43.8097437!3d-21.2257539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa30e7d79c4bddf%3A0x5c7c0c6c66a0e72c!2sBarbacena%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr";
 
   const contactInfo = [
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Endereço",
-      value: "Av. Exemplo, 1000 - Sala 100\nBairro, Cidade - Estado\nCEP: 00000-000",
+      value: "Rua Exemplo, 123 – Centro\nBarbacena – MG\nCEP 36.200-000",
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Telefone",
-      value: "(00) 0000-0000\n(00) 90000-0000",
+      value: "(32) 0000-0000\n(32) 90000-0000",
     },
     {
       icon: <Mail className="w-5 h-5" />,
@@ -32,12 +32,12 @@ const LocationSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-silver-dark text-sm font-medium tracking-[0.25em] uppercase mb-4 opacity-0 animate-fade-up">
-            Localização
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground opacity-0 animate-fade-up animation-delay-100">
-            Onde Estamos
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground mb-6 opacity-0 animate-fade-up">
+            Atendimento em Barbacena – MG e Região
           </h2>
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
+            Atendemos Barbacena – MG e cidades da região, com foco em laudos técnicos de engenharia civil, vistorias, perícias e avaliações de imóveis.
+          </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -72,7 +72,7 @@ const LocationSection = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização Harpia Consultoria"
+                  title="Localização em Barbacena MG - Laudos Técnicos de Engenharia Civil"
                   className="grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>

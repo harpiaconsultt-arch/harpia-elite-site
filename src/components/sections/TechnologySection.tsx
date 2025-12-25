@@ -28,17 +28,17 @@ const TechnologySection = () => {
     {
       icon: <Scan className="w-8 h-8" />,
       title: "Análise Não Destrutiva",
-      description: "Avaliação precisa da integridade estrutural sem comprometer a estrutura existente, utilizando ultrassom e esclerometria.",
+      description: "Avaliação da integridade estrutural por meio de ensaios não destrutivos (como ultrassom e esclerometria), aplicada à elaboração de laudos técnicos de engenharia civil, laudos de vistoria e pareceres técnicos.",
     },
     {
       icon: <Radar className="w-8 h-8" />,
       title: "Varredura a Laser 3D",
-      description: "Escaneamento LIDAR de alta precisão para modelagem digital completa e identificação de deformações milimétricas.",
+      description: "Modelagem e varredura a laser 3D para identificação de deformações, deslocamentos e interferências, fornecendo base confiável para laudos periciais de engenharia civil, relatórios técnicos e perícias judiciais.",
     },
     {
       icon: <Thermometer className="w-8 h-8" />,
       title: "Termografia Infravermelha",
-      description: "Detecção de infiltrações, vazamentos e falhas térmicas invisíveis a olho nu através de câmeras termográficas.",
+      description: "Uso de termografia para detecção de umidade, infiltrações, falhas de vedação e anomalias em sistemas construtivos, garantindo laudos de engenharia civil mais completos em vistorias de imóveis e avaliações técnicas.",
     },
   ];
 
@@ -47,12 +47,12 @@ const TechnologySection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-silver-dark text-sm font-medium tracking-[0.25em] uppercase mb-4 opacity-0 animate-fade-up">
-            Tecnologia de Ponta
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground opacity-0 animate-fade-up animation-delay-100">
-            Diagnóstico com Precisão Tecnológica
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground mb-6 opacity-0 animate-fade-up">
+            Tecnologia Aplicada a Laudos Técnicos e Perícias em Engenharia Civil
           </h2>
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
+            Utilizamos métodos de inspeção e análise que aumentam a precisão dos laudos técnicos de engenharia civil, laudos periciais e relatórios técnicos.
+          </p>
         </div>
 
         {/* Tech Cards Grid */}

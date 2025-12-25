@@ -1,8 +1,6 @@
 import { Linkedin, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const socialLinks = [
     { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
     { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" },
@@ -20,6 +18,16 @@ const Footer = () => {
             </h3>
             <p className="text-silver/70 text-sm tracking-[0.2em] uppercase mt-1">
               Consultoria
+            </p>
+          </div>
+
+          {/* Description */}
+          <div className="max-w-xl mb-8">
+            <p className="text-silver leading-relaxed mb-2">
+              Laudos Técnicos, Perícias e Vistorias de Engenharia Civil em Barbacena – MG.
+            </p>
+            <p className="text-silver/70 text-sm">
+              Laudo técnico de engenharia civil, laudo pericial, laudo de vistoria e avaliação de imóveis por engenheiro civil.
             </p>
           </div>
 
@@ -42,10 +50,10 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-silver/60 text-sm">
-            © {currentYear} Harpia Consultoria. Todos os direitos reservados.
+            © 2025 Harpia Consultoria. Todos os direitos reservados.
           </p>
           <p className="text-silver/40 text-xs mt-2">
-            CREA-XX 00000 | CNPJ: 00.000.000/0001-00
+            CREA-MG 144817DDMG | CNPJ: 46.328.659/0001-72
           </p>
         </div>
       </div>
