@@ -18,7 +18,7 @@ const LocationSection = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "E-mail",
-      value: "contato@harpiaconsultoria.com.br",
+      value: "contato@harpiaconsultoria.eng.br",
     },
     {
       icon: <Clock className="w-5 h-5" />,
