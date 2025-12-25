@@ -1,4 +1,4 @@
-import { FileText } from "lucide-react";
+import { FileCheck } from "lucide-react";
 
 const ReportTypesSection = () => {
   const reportTypes = [
@@ -36,7 +36,7 @@ const ReportTypesSection = () => {
 
   return (
     <section 
-      className="py-24 lg:py-32 bg-background"
+      className="py-24 lg:py-32 bg-navy"
       aria-label="Tipos de laudos de engenharia civil disponíveis"
     >
       <div className="container mx-auto px-6 lg:px-12">
@@ -60,14 +60,14 @@ const ReportTypesSection = () => {
             {reportTypes.map((report, index) => (
               <article 
                 key={report.title}
-                className={`group flex items-start gap-4 p-6 bg-navy-light rounded-lg border border-silver/20 opacity-0 animate-fade-up hover:border-silver/40 transition-all duration-300`}
+                className="group flex items-start gap-4 p-6 bg-navy-light rounded-lg border border-silver/20 opacity-0 animate-fade-up hover:border-silver/40 transition-all duration-300"
                 style={{ animationDelay: `${(index + 2) * 100}ms` }}
                 role="listitem"
                 aria-label={report.seoLabel}
                 title={report.seoLabel}
               >
                 <div className="w-10 h-10 rounded-lg bg-silver/10 flex items-center justify-center shrink-0 group-hover:bg-silver/20 transition-colors">
-                  <FileText 
+                  <FileCheck 
                     className="w-5 h-5 text-silver" 
                     aria-hidden="true"
                   />
@@ -83,6 +83,11 @@ const ReportTypesSection = () => {
               </article>
             ))}
           </div>
+
+          {/* Final Note */}
+          <p className="text-center text-silver/80 text-sm mt-10 opacity-0 animate-fade-up animation-delay-500">
+            Todos os laudos seguem normas aplicáveis e incluem ART quando necessário.
+          </p>
         </div>
       </div>
 

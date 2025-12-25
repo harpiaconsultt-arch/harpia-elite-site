@@ -30,11 +30,14 @@ const FAQSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up">
-              Perguntas Frequentes sobre Laudos Técnicos de Engenharia Civil
+          <header className="text-center mb-16">
+            <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up">
+              Perguntas Frequentes sobre Laudos Técnicos
             </h2>
-          </div>
+            <p className="text-silver text-lg opacity-0 animate-fade-up animation-delay-100">
+              Tire suas dúvidas sobre laudos de engenharia civil.
+            </p>
+          </header>
 
           {/* FAQ Accordion */}
           <Accordion type="single" collapsible className="space-y-4">
@@ -42,10 +45,11 @@ const FAQSection = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className={`bg-navy-light border border-silver/20 rounded-lg px-6 opacity-0 animate-fade-up animation-delay-${(index + 2) * 100}`}
+                className="bg-navy-light border border-silver/20 rounded-lg px-6 opacity-0 animate-fade-up"
+                style={{ animationDelay: `${(index + 2) * 100}ms` }}
               >
-                <AccordionTrigger className="text-left text-foreground hover:text-silver-light font-display text-lg py-6">
-                  {faq.question}
+                <AccordionTrigger className="text-left text-foreground hover:text-silver-light font-sans text-base lg:text-lg py-6">
+                  <h3 className="font-semibold">{faq.question}</h3>
                 </AccordionTrigger>
                 <AccordionContent className="text-silver leading-relaxed pb-6">
                   {faq.answer}
