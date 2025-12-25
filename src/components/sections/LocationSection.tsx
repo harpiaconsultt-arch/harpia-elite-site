@@ -121,56 +121,91 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
                 ))}
               </div>
 
-              {/* Contact Form */}
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <h3 className="font-sans text-xl font-semibold text-card-foreground mb-4">
-                  Solicite um Orçamento
-                </h3>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input
-                    type="text"
-                    name="nome"
-                    placeholder="Seu nome *"
-                    value={formData.nome}
-                    onChange={handleInputChange}
-                    maxLength={100}
-                    required
-                    className="bg-background border-border text-card-foreground placeholder:text-muted-foreground"
-                    aria-label="Nome completo"
-                  />
-                  <Input
-                    type="tel"
-                    name="telefone"
-                    placeholder="Seu telefone *"
-                    value={formData.telefone}
-                    onChange={handleInputChange}
-                    maxLength={20}
-                    required
-                    className="bg-background border-border text-card-foreground placeholder:text-muted-foreground"
-                    aria-label="Telefone para contato"
-                  />
+              {/* Contact Form Card */}
+              <div className="bg-primary rounded-xl p-6 lg:p-8 shadow-lg">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center">
+                    <Send className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-sans text-xl font-semibold text-foreground">
+                      Solicite um Orçamento
+                    </h3>
+                    <p className="text-silver text-sm">
+                      Resposta rápida via WhatsApp
+                    </p>
+                  </div>
                 </div>
                 
-                <Textarea
-                  name="mensagem"
-                  placeholder="Descreva brevemente sua necessidade (opcional)"
-                  value={formData.mensagem}
-                  onChange={handleInputChange}
-                  maxLength={500}
-                  rows={3}
-                  className="bg-background border-border text-card-foreground placeholder:text-muted-foreground resize-none"
-                  aria-label="Mensagem opcional"
-                />
-                
-                <Button 
-                  type="submit" 
-                  className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20BD5A] text-white font-medium"
-                >
-                  <Send className="w-4 h-4 mr-2" />
-                  Enviar via WhatsApp
-                </Button>
-              </form>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="space-y-4">
+                    <div>
+                      <label htmlFor="nome" className="block text-sm font-medium text-silver-light mb-2">
+                        Nome completo *
+                      </label>
+                      <Input
+                        id="nome"
+                        type="text"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        value={formData.nome}
+                        onChange={handleInputChange}
+                        maxLength={100}
+                        required
+                        className="bg-navy-light border-silver/20 text-foreground placeholder:text-silver/50 focus:border-silver/40 h-12"
+                        aria-label="Nome completo"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="telefone" className="block text-sm font-medium text-silver-light mb-2">
+                        Telefone / WhatsApp *
+                      </label>
+                      <Input
+                        id="telefone"
+                        type="tel"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        value={formData.telefone}
+                        onChange={handleInputChange}
+                        maxLength={20}
+                        required
+                        className="bg-navy-light border-silver/20 text-foreground placeholder:text-silver/50 focus:border-silver/40 h-12"
+                        aria-label="Telefone para contato"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="mensagem" className="block text-sm font-medium text-silver-light mb-2">
+                        Mensagem (opcional)
+                      </label>
+                      <Textarea
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Descreva brevemente sua necessidade..."
+                        value={formData.mensagem}
+                        onChange={handleInputChange}
+                        maxLength={500}
+                        rows={4}
+                        className="bg-navy-light border-silver/20 text-foreground placeholder:text-silver/50 focus:border-silver/40 resize-none"
+                        aria-label="Mensagem opcional"
+                      />
+                    </div>
+                  </div>
+                  
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold h-12 text-base shadow-md hover:shadow-lg transition-all duration-300"
+                  >
+                    <Send className="w-5 h-5 mr-2" />
+                    Enviar via WhatsApp
+                  </Button>
+                  
+                  <p className="text-center text-silver/60 text-xs mt-3">
+                    Ao enviar, você será redirecionado para o WhatsApp
+                  </p>
+                </form>
+              </div>
             </div>
 
             {/* Map */}
