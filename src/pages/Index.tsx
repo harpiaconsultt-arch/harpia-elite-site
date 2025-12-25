@@ -8,11 +8,13 @@ import FAQSection from "@/components/sections/FAQSection";
 import TeamSection from "@/components/sections/TeamSection";
 import LocationSection from "@/components/sections/LocationSection";
 import Footer from "@/components/sections/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <WhatsAppButton />
       
       <main>
         <HeroSection />
