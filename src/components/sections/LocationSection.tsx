@@ -86,7 +86,7 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-off-white">
+    <section className="py-16 lg:py-24 bg-off-white">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <header className="text-center mb-16">

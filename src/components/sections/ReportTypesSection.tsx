@@ -36,7 +36,7 @@ const ReportTypesSection = () => {
 
   return (
     <section 
-      className="py-24 lg:py-32 bg-navy"
+      className="py-16 lg:py-24 bg-navy"
       aria-label="Tipos de laudos de engenharia civil disponíveis"
     >
       <div className="container mx-auto px-6 lg:px-12">
