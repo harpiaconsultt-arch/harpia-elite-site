@@ -9,19 +9,19 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Quanto custa um laudo técnico de engenharia civil?",
-      answer: "O custo de um laudo técnico de engenharia varia conforme o tipo de imóvel, complexidade da análise, necessidade de ensaios complementares e deslocamento. Em geral, o valor é definido após uma avaliação inicial do escopo. Fornecemos orçamento detalhado antes do início da vistoria.",
+      answer: "O valor varia conforme o tipo de imóvel, complexidade e necessidade de ensaios. Fornecemos orçamento detalhado após avaliação inicial do escopo.",
     },
     {
-      question: "Qual a diferença entre laudo técnico, relatório técnico e parecer técnico de engenharia?",
-      answer: "O laudo técnico de engenharia civil é um documento mais completo, com descrição, análise, conclusão e, quando necessário, recomendações. O relatório técnico costuma ser mais sintético, usado quando o objeto é mais restrito. Já o parecer técnico de engenharia é focado em responder a questões específicas, muito comum em perícias e processos judiciais.",
+      question: "Qual a diferença entre laudo técnico, relatório e parecer?",
+      answer: "Laudo técnico é completo com análise e conclusão. Relatório técnico é mais sintético. Parecer técnico responde questões específicas, comum em perícias.",
     },
     {
-      question: "Qualquer engenheiro pode fazer laudo técnico de engenharia civil?",
-      answer: "Laudos técnicos de engenharia civil devem ser elaborados por engenheiro devidamente habilitado e com atribuições compatíveis junto ao CREA. Para laudos estruturais, vistorias e avaliações de imóveis, é essencial que o profissional tenha experiência na área específica e registre a respectiva ART.",
+      question: "Qualquer engenheiro pode fazer laudo técnico?",
+      answer: "Não. Laudos devem ser elaborados por engenheiro habilitado com atribuições no CREA e experiência comprovada na área específica.",
     },
     {
-      question: "Os laudos atendem às exigências da Caixa e de outros bancos?",
-      answer: "Sim. Elaboramos laudo de engenharia para Caixa e demais instituições financeiras, observando os requisitos técnicos de cada agente financeiro, para utilização em financiamentos, refinanciamentos e regularizações.",
+      question: "Os laudos atendem Caixa e bancos?",
+      answer: "Sim. Elaboramos laudos conforme requisitos técnicos de cada instituição financeira para financiamentos e regularizações.",
     },
   ];
 

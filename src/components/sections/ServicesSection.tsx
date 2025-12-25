@@ -35,12 +35,8 @@ const ServiceCard = ({ icon, title, description, details, isHighlighted, delay }
       {title}
     </h3>
     
-    <p className="text-silver leading-relaxed mb-4">
+    <p className="text-silver leading-relaxed">
       {description}
-    </p>
-    
-    <p className="text-silver/70 text-sm leading-relaxed">
-      {details}
     </p>
   </div>
 );
@@ -50,29 +46,29 @@ const ServicesSection = () => {
     {
       icon: <FileText className="w-10 h-10" />,
       title: "Laudos Técnicos de Engenharia Civil",
-      description: "Elaboração de laudo técnico de engenharia civil e relatórios técnicos para regularização de imóveis, reformas, ampliação de carga, comprovação de estabilidade, atendimento a exigências de prefeituras e órgãos públicos.",
-      details: "Indicados para: adequações em projetos, manifestações patológicas, alterações estruturais e comprovação de condições de segurança.",
+      description: "Laudo técnico e relatório técnico para regularização, reformas, comprovação de estabilidade e atendimento a órgãos públicos.",
+      details: "",
       isHighlighted: false,
     },
     {
       icon: <Building className="w-10 h-10" />,
-      title: "Vistorias e Laudos de Avaliação de Imóveis",
-      description: "Vistoria técnica por engenheiro civil e emissão de laudo de avaliação de imóvel para compra e venda, financiamentos, garantia, seguros e atualização patrimonial.",
-      details: "Atendemos solicitações de avaliação de imóveis por engenheiro civil em conformidade com as normas aplicáveis, com a emissão de laudos de vistoria e relatórios fotográficos.",
+      title: "Vistorias e Avaliação de Imóveis",
+      description: "Vistoria técnica e laudo de avaliação de imóvel para compra/venda, financiamentos, seguros e atualização patrimonial.",
+      details: "",
       isHighlighted: true,
     },
     {
       icon: <Landmark className="w-10 h-10" />,
       title: "Laudos para Caixa e Bancos",
-      description: "Emissão de laudo de engenharia para Caixa, Banco do Brasil e demais instituições financeiras, com laudo do engenheiro conforme os critérios técnicos exigidos em financiamentos, repactuações e liberações de recursos.",
-      details: "Inclui laudo engenharia Caixa, relatórios técnicos de vistoria e documentação complementar quando necessário.",
+      description: "Laudo de engenharia para Caixa, Banco do Brasil e demais instituições financeiras, conforme critérios técnicos exigidos.",
+      details: "",
       isHighlighted: false,
     },
     {
       icon: <Scale className="w-10 h-10" />,
-      title: "Perícias Judiciais e Extrajudiciais",
-      description: "Laudo pericial de engenharia civil para ações judiciais e extrajudiciais, abrangendo conflitos construtivos, vícios em obras, infiltrações, trincas, recalques, cobranças indevidas e discussão contratual.",
-      details: "Elaboramos laudos periciais de engenharia civil, laudo judicial engenharia e parecer técnico de engenharia para suporte a advogados, empresas e pessoas físicas.",
+      title: "Perícias Judiciais",
+      description: "Laudo pericial de engenharia civil para ações judiciais e extrajudiciais, conflitos construtivos e vícios em obras.",
+      details: "",
       isHighlighted: false,
     },
   ];
@@ -83,10 +79,10 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up">
-            Serviços em Laudos Técnicos, Perícias e Vistorias de Engenharia Civil
+            Serviços em Laudos Técnicos e Perícias
           </h2>
           <p className="text-silver text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
-            Atuamos na emissão de laudos técnicos de engenharia civil, laudos periciais e relatórios para imóveis residenciais, comerciais e industriais.
+            Laudos técnicos, periciais e vistorias para imóveis residenciais, comerciais e industriais.
           </p>
         </div>
 

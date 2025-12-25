@@ -28,17 +28,17 @@ const TechnologySection = () => {
     {
       icon: <Scan className="w-8 h-8" />,
       title: "Análise Não Destrutiva",
-      description: "Avaliação da integridade estrutural por meio de ensaios não destrutivos (como ultrassom e esclerometria), aplicada à elaboração de laudos técnicos de engenharia civil, laudos de vistoria e pareceres técnicos.",
+      description: "Ensaios não destrutivos (ultrassom, esclerometria) para laudos técnicos e vistorias estruturais.",
     },
     {
       icon: <Radar className="w-8 h-8" />,
       title: "Varredura a Laser 3D",
-      description: "Modelagem e varredura a laser 3D para identificação de deformações, deslocamentos e interferências, fornecendo base confiável para laudos periciais de engenharia civil, relatórios técnicos e perícias judiciais.",
+      description: "Modelagem 3D para identificação de deformações em laudos periciais e perícias judiciais.",
     },
     {
       icon: <Thermometer className="w-8 h-8" />,
       title: "Termografia Infravermelha",
-      description: "Uso de termografia para detecção de umidade, infiltrações, falhas de vedação e anomalias em sistemas construtivos, garantindo laudos de engenharia civil mais completos em vistorias de imóveis e avaliações técnicas.",
+      description: "Detecção de umidade e infiltrações para vistorias e avaliações de imóveis completas.",
     },
   ];
 
@@ -48,10 +48,10 @@ const TechnologySection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground mb-6 opacity-0 animate-fade-up">
-            Tecnologia Aplicada a Laudos Técnicos e Perícias em Engenharia Civil
+            Tecnologia Aplicada a Laudos de Engenharia Civil
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
-            Utilizamos métodos de inspeção e análise que aumentam a precisão dos laudos técnicos de engenharia civil, laudos periciais e relatórios técnicos.
+            Métodos de inspeção que aumentam a precisão dos laudos.
           </p>
         </div>
 

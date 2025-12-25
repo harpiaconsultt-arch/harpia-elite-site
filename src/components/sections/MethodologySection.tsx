@@ -44,25 +44,25 @@ const MethodologySection = () => {
       number: "01",
       icon: <MessageSquare className="w-6 h-6" />,
       title: "Consultoria e Escopo",
-      description: "Entendimento da demanda, análise de documentos existentes e definição do tipo de laudo de engenharia civil necessário: laudo técnico, laudo de vistoria, laudo pericial ou relatório técnico.",
+      description: "Entendimento da demanda e definição do tipo de laudo necessário.",
     },
     {
       number: "02",
       icon: <Search className="w-6 h-6" />,
-      title: "Inspeção Técnica em Campo",
-      description: "Visita técnica in loco realizada por engenheiro civil, com registro fotográfico, medições e, quando necessário, uso de equipamentos de inspeção não destrutiva para subsidiar o laudo técnico de engenharia.",
+      title: "Inspeção Técnica",
+      description: "Visita in loco com equipamentos de última geração para coleta de dados.",
     },
     {
       number: "03",
       icon: <FileCheck className="w-6 h-6" />,
       title: "Análise e Parecer",
-      description: "Processamento dos dados coletados, análise das evidências, verificação de normas e elaboração do parecer técnico de engenharia que dará origem ao laudo técnico ou laudo pericial de engenharia civil.",
+      description: "Processamento dos dados e elaboração do parecer técnico fundamentado.",
     },
     {
       number: "04",
       icon: <Award className="w-6 h-6" />,
-      title: "Entrega do Laudo Final",
-      description: "Apresentação do laudo técnico de engenharia civil completo, com conclusão, recomendações técnicas quando cabíveis e anexos. Documento apto a ser utilizado perante órgãos públicos, instituições financeiras e no âmbito judicial.",
+      title: "Entrega do Laudo",
+      description: "Laudo completo, pronto para órgãos públicos, instituições financeiras ou processos judiciais.",
     },
   ];
 
@@ -73,10 +73,10 @@ const MethodologySection = () => {
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground mb-6 opacity-0 animate-fade-up">
-              Metodologia para Elaboração de Laudos Técnicos e Periciais
+              Metodologia para Laudos Técnicos e Periciais
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
-              Processo estruturado para garantir laudos de engenharia civil claros, objetivos e tecnicamente fundamentados.
+              Processo estruturado e fundamentado.
             </p>
           </div>
 
