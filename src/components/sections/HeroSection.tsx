@@ -16,30 +16,30 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center">
-        <div className="max-w-4xl mx-auto">
-          {/* Tagline */}
-          <p className="text-silver-light text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-6 opacity-0 animate-fade-up">
-            Engenharia Civil – Laudos e Perícias em Barbacena – MG
+        <div className="max-w-5xl mx-auto">
+          {/* Tagline - subtle */}
+          <p className="text-silver/60 text-xs tracking-[0.25em] uppercase mb-10 opacity-0 animate-fade-up">
+            Barbacena – MG
           </p>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-foreground leading-tight mb-8 opacity-0 animate-fade-up animation-delay-100">
-            Laudo Técnico de Engenharia Civil
-            <span className="block text-silver-light">com Diagnóstico Preciso e Fundamentado</span>
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-foreground leading-tight mb-8 opacity-0 animate-fade-up animation-delay-100">
+            Laudo Técnico de Engenharia Civil <br className="hidden md:block" />
+            <span className="text-silver-light">com Diagnóstico Preciso</span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-silver text-lg md:text-xl max-w-3xl mx-auto mb-6 leading-relaxed opacity-0 animate-fade-up animation-delay-200">
-            Laudos técnicos, periciais e vistorias de engenharia civil em Barbacena – MG.
+          {/* Subtitle - single line */}
+          <p className="text-silver text-base md:text-lg lg:text-xl max-w-2xl mx-auto mb-10 opacity-0 animate-fade-up animation-delay-200">
+            Laudos técnicos, perícias e vistorias de engenharia civil em Barbacena – MG.
           </p>
 
           {/* Supporting phrase */}
-          <p className="text-silver/80 text-base md:text-lg max-w-2xl mx-auto mb-12 italic opacity-0 animate-fade-up animation-delay-200">
+          <p className="text-silver/70 text-sm md:text-base max-w-xl mx-auto mb-14 italic opacity-0 animate-fade-up animation-delay-200">
             "Sem laudo bem fundamentado, toda decisão sobre imóveis é risco."
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-up animation-delay-300">
+          {/* CTA Button */}
+          <div className="opacity-0 animate-fade-up animation-delay-300">
             <Button variant="hero" size="xl" className="animate-pulse-glow">
               SOLICITAR LAUDO TÉCNICO / PERICIAL
             </Button>
