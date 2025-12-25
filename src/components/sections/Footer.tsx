@@ -23,11 +23,8 @@ const Footer = () => {
 
           {/* Description */}
           <div className="max-w-xl mb-8">
-            <p className="text-silver leading-relaxed mb-2">
-              Laudos Técnicos, Perícias e Vistorias de Engenharia Civil em Barbacena – MG.
-            </p>
-            <p className="text-silver/70 text-sm">
-              Laudo técnico de engenharia civil, laudo pericial, laudo de vistoria e avaliação de imóveis por engenheiro civil.
+            <p className="text-silver leading-relaxed">
+              Laudos técnicos, periciais e vistorias de engenharia civil em Barbacena – MG.
             </p>
           </div>
 

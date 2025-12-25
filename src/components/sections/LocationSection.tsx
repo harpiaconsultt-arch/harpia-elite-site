@@ -8,12 +8,12 @@ const LocationSection = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Endereço",
-      value: "Rua Exemplo, 123 – Centro\nBarbacena – MG\nCEP 36.200-000",
+      value: "Avenida Olegário Maciel, 470, Centro\nBarbacena – MG | CEP 36.200-XXX",
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Telefone",
-      value: "(32) 0000-0000\n(32) 90000-0000",
+      value: "(31) 98216-2913",
     },
     {
       icon: <Mail className="w-5 h-5" />,
@@ -23,7 +23,7 @@ const LocationSection = () => {
     {
       icon: <Clock className="w-5 h-5" />,
       label: "Horário de Atendimento",
-      value: "Segunda a Sexta: 8h às 18h\nSábado: 9h às 13h",
+      value: "Segunda a Sexta: 8h às 18h",
     },
   ];
 
@@ -33,10 +33,10 @@ const LocationSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground mb-6 opacity-0 animate-fade-up">
-            Atendimento em Barbacena – MG e Região
+            Atendimento em Barbacena – MG
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
-            Atendemos Barbacena – MG e cidades da região, com foco em laudos técnicos de engenharia civil, vistorias, perícias e avaliações de imóveis.
+            Laudos técnicos, vistorias e perícias na região.
           </p>
         </div>
 

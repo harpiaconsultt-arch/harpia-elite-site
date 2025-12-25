@@ -30,21 +30,18 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-silver text-lg md:text-xl max-w-3xl mx-auto mb-6 leading-relaxed opacity-0 animate-fade-up animation-delay-200">
-            Laudos técnicos, laudos periciais, relatórios e vistorias de engenharia civil para avaliação de imóveis, estruturas e processos judiciais em Barbacena – MG e região, elaborados por engenheiro civil com responsabilidade técnica e conformidade às normas.
+            Laudos técnicos, periciais e vistorias de engenharia civil em Barbacena – MG.
           </p>
 
           {/* Supporting phrase */}
           <p className="text-silver/80 text-base md:text-lg max-w-2xl mx-auto mb-12 italic opacity-0 animate-fade-up animation-delay-200">
-            "Sem laudo de engenharia bem fundamentado, toda decisão sobre imóveis e estruturas é um risco desnecessário."
+            "Sem laudo bem fundamentado, toda decisão sobre imóveis é risco."
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-up animation-delay-300">
             <Button variant="hero" size="xl" className="animate-pulse-glow">
               SOLICITAR LAUDO TÉCNICO / PERICIAL
-            </Button>
-            <Button variant="outline" size="xl" className="border-silver/50 text-silver hover:bg-silver/10 hover:text-silver-light">
-              Falar com engenheiro civil para vistoria
             </Button>
           </div>
         </div>

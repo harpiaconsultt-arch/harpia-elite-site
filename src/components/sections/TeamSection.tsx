@@ -43,19 +43,19 @@ const TeamSection = () => {
     {
       name: "Nome do Fundador",
       role: "Diretor Técnico",
-      description: "Engenheiro civil com atuação focada em laudos técnicos de engenharia civil, vistorias estruturais, avaliação de imóveis e laudos periciais em Barbacena – MG e região.",
+      description: "Engenheiro responsável por laudos técnicos, vistorias estruturais e avaliação de imóveis em Barbacena – MG.",
       imageUrl: undefined,
     },
     {
       name: "Nome do Engenheiro",
       role: "Engenheiro Sênior",
-      description: "Responsável por análises estruturais, ensaios e parecer técnico de engenharia em estruturas de concreto, metálicas e alvenaria estrutural, com ênfase em laudos periciais de engenharia civil.",
+      description: "Especialista em análises estruturais e laudos periciais de engenharia civil.",
       imageUrl: undefined,
     },
     {
       name: "Nome do Especialista",
       role: "Especialista em Inspeções",
-      description: "Apoio em inspeções de campo, coleta de dados e preparação de relatórios técnicos de engenharia civil e laudos de vistoria.",
+      description: "Apoio em inspeções de campo e preparação de relatórios técnicos.",
       imageUrl: undefined,
     },
   ];
@@ -66,10 +66,10 @@ const TeamSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up">
-            Nossa Equipe de Engenharia Civil
+            Nossa Equipe
           </h2>
           <p className="text-silver max-w-2xl mx-auto opacity-0 animate-fade-up animation-delay-100">
-            Engenheiros civis especializados em laudos técnicos, perícias e avaliações de imóveis.
+            Engenheiros civis especializados em laudos e perícias.
           </p>
         </div>
 
