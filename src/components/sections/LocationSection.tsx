@@ -8,7 +8,7 @@ const LocationSection = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Endereço",
-      value: "Avenida Olegário Maciel, 470, Centro\nBarbacena – MG | CEP 36.200-XXX",
+      value: "Avenida Olegário Maciel, 470, Centro\nBarbacena – MG | CEP 36200-082",
     },
     {
       icon: <Phone className="w-5 h-5" />,
