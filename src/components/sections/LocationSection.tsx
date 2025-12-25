@@ -20,24 +20,24 @@ const LocationSection = () => {
 
   const contactInfo = [
     {
-      icon: <MapPin className="w-5 h-5" />,
+      icon: <MapPin className="w-5 h-5" aria-hidden="true" />,
       label: "Endereço",
       value: "Avenida Olegário Maciel, 470, Centro\nBarbacena – MG | CEP 36200-082",
     },
     {
-      icon: <Phone className="w-5 h-5" />,
+      icon: <Phone className="w-5 h-5" aria-hidden="true" />,
       label: "Telefone",
       value: "(31) 98216-2913",
     },
     {
-      icon: <Mail className="w-5 h-5" />,
+      icon: <Mail className="w-5 h-5" aria-hidden="true" />,
       label: "E-mail",
       value: "contato@harpiaconsultoria.eng.br",
     },
     {
-      icon: <Clock className="w-5 h-5" />,
+      icon: <Clock className="w-5 h-5" aria-hidden="true" />,
       label: "Horário de Atendimento",
-      value: "Segunda a Sexta: 8h às 18h",
+      value: "Segunda a Sexta: 8h às 18h\nSábado: 9h às 13h",
     },
   ];
 
@@ -89,17 +89,17 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
     <section className="py-24 lg:py-32 bg-off-white">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-card-foreground mb-6 opacity-0 animate-fade-up">
             Atendimento em Barbacena – MG
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto opacity-0 animate-fade-up animation-delay-100">
             Laudos técnicos, vistorias e perícias na região.
           </p>
-        </div>
+        </header>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Left Column: Contact Info + Form */}
             <div className="space-y-10 opacity-0 animate-fade-up animation-delay-200">
               {/* Contact Information */}
@@ -125,7 +125,7 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
               <div className="bg-primary rounded-xl p-6 lg:p-8 shadow-lg">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center">
-                    <Send className="w-5 h-5 text-white" />
+                    <Send className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <h3 className="font-sans text-xl font-semibold text-foreground">
@@ -197,7 +197,7 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
                     type="submit" 
                     className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold h-12 text-base shadow-md hover:shadow-lg transition-all duration-300"
                   >
-                    <Send className="w-5 h-5 mr-2" />
+                    <Send className="w-5 h-5 mr-2" aria-hidden="true" />
                     Enviar via WhatsApp
                   </Button>
                   
