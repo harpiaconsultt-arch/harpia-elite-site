@@ -3,12 +3,12 @@ import { User } from "lucide-react";
 interface TeamMemberProps {
   name: string;
   role: string;
-  credentials: string;
+  description: string;
   imageUrl?: string;
   delay: string;
 }
 
-const TeamMember = ({ name, role, credentials, imageUrl, delay }: TeamMemberProps) => (
+const TeamMember = ({ name, role, description, imageUrl, delay }: TeamMemberProps) => (
   <div className={`text-center opacity-0 animate-fade-up ${delay}`}>
     {/* Photo Container */}
     <div className="w-32 h-32 lg:w-40 lg:h-40 mx-auto mb-6 rounded-full overflow-hidden border-2 border-silver/40 bg-navy-light">
@@ -29,11 +29,11 @@ const TeamMember = ({ name, role, credentials, imageUrl, delay }: TeamMemberProp
     <h3 className="font-display text-xl lg:text-2xl font-semibold text-foreground mb-2">
       {name}
     </h3>
-    <p className="text-silver font-medium mb-1">
+    <p className="text-silver font-medium mb-3">
       {role}
     </p>
-    <p className="text-silver/70 text-sm">
-      {credentials}
+    <p className="text-silver/70 text-sm max-w-xs mx-auto leading-relaxed">
+      {description}
     </p>
   </div>
 );
@@ -43,20 +43,20 @@ const TeamSection = () => {
     {
       name: "Nome do Fundador",
       role: "Diretor Técnico",
-      credentials: "Eng. Civil, MSc. Estruturas",
-      imageUrl: undefined, // Replace with actual photo URL
+      description: "Engenheiro civil com atuação focada em laudos técnicos de engenharia civil, vistorias estruturais, avaliação de imóveis e laudos periciais em Barbacena – MG e região.",
+      imageUrl: undefined,
     },
     {
       name: "Nome do Engenheiro",
       role: "Engenheiro Sênior",
-      credentials: "Eng. Civil, Esp. Patologia",
-      imageUrl: undefined, // Replace with actual photo URL
+      description: "Responsável por análises estruturais, ensaios e parecer técnico de engenharia em estruturas de concreto, metálicas e alvenaria estrutural, com ênfase em laudos periciais de engenharia civil.",
+      imageUrl: undefined,
     },
     {
       name: "Nome do Especialista",
       role: "Especialista em Inspeções",
-      credentials: "Eng. Civil, CREA-XX 00000",
-      imageUrl: undefined, // Replace with actual photo URL
+      description: "Apoio em inspeções de campo, coleta de dados e preparação de relatórios técnicos de engenharia civil e laudos de vistoria.",
+      imageUrl: undefined,
     },
   ];
 
@@ -65,14 +65,11 @@ const TeamSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-silver text-sm font-medium tracking-[0.25em] uppercase mb-4 opacity-0 animate-fade-up">
-            Especialistas
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up animation-delay-100">
-            Nossa Equipe
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up">
+            Nossa Equipe de Engenharia Civil
           </h2>
-          <p className="text-silver max-w-2xl mx-auto opacity-0 animate-fade-up animation-delay-200">
-            Profissionais altamente qualificados com décadas de experiência combinada em engenharia estrutural e inspeções técnicas.
+          <p className="text-silver max-w-2xl mx-auto opacity-0 animate-fade-up animation-delay-100">
+            Engenheiros civis especializados em laudos técnicos, perícias e avaliações de imóveis.
           </p>
         </div>
 
@@ -82,7 +79,7 @@ const TeamSection = () => {
             <TeamMember
               key={member.name}
               {...member}
-              delay={`animation-delay-${(index + 3) * 100}`}
+              delay={`animation-delay-${(index + 2) * 100}`}
             />
           ))}
         </div>
