@@ -9,6 +9,7 @@ import TeamSection from "@/components/sections/TeamSection";
 import LocationSection from "@/components/sections/LocationSection";
 import Footer from "@/components/sections/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
@@ -19,33 +20,47 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        <div id="tecnologia">
-          <TechnologySection />
-        </div>
+        <AnimatedSection>
+          <div id="tecnologia">
+            <TechnologySection />
+          </div>
+        </AnimatedSection>
         
-        <div id="servicos">
-          <ServicesSection />
-        </div>
+        <AnimatedSection>
+          <div id="servicos">
+            <ServicesSection />
+          </div>
+        </AnimatedSection>
         
-        <div id="tipos-laudos">
-          <ReportTypesSection />
-        </div>
+        <AnimatedSection>
+          <div id="tipos-laudos">
+            <ReportTypesSection />
+          </div>
+        </AnimatedSection>
         
-        <div id="metodologia">
-          <MethodologySection />
-        </div>
+        <AnimatedSection>
+          <div id="metodologia">
+            <MethodologySection />
+          </div>
+        </AnimatedSection>
         
-        <div id="faq">
-          <FAQSection />
-        </div>
+        <AnimatedSection>
+          <div id="faq">
+            <FAQSection />
+          </div>
+        </AnimatedSection>
         
-        <div id="equipe">
-          <TeamSection />
-        </div>
+        <AnimatedSection>
+          <div id="equipe">
+            <TeamSection />
+          </div>
+        </AnimatedSection>
         
-        <div id="contato">
-          <LocationSection />
-        </div>
+        <AnimatedSection>
+          <div id="contato">
+            <LocationSection />
+          </div>
+        </AnimatedSection>
       </main>
       
       <Footer />
