@@ -43,7 +43,7 @@ const TeamSection = () => {
     {
       name: "Gustavo Santos",
       role: "Engenheiro Civil",
-      description: "Especialista em contenções e estabilidade de taludes, perito credenciado e engenheiro avaliador. Atuou em obras relevantes, incluindo o projeto de contenção do Morro da Forca em Ouro Preto.",
+      description: "Especialista em contenções e estabilidade de taludes, perito credenciado TJMG e MPMG. Atuou em obras relevantes, incluindo o projeto de contenção do Morro da Forca em Ouro Preto.",
       imageUrl: undefined,
     },
     {
