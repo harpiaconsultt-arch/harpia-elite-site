@@ -3,21 +3,17 @@ import { useEffect } from "react";
 const TestimonialsSection = () => {
   useEffect(() => {
     // Load Trustindex widget script
-    const script = document.createElement("script");
-    script.src = "https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector(
-        'script[src="https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319"]'
-      );
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
+    const existingScript = document.querySelector(
+      'script[src*="cdn.trustindex.io"]'
+    );
+    
+    if (!existingScript) {
+      const script = document.createElement("script");
+      script.src = "https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319";
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+    }
   }, []);
 
   // JSON-LD structured data for SEO
@@ -64,11 +60,12 @@ const TestimonialsSection = () => {
         </header>
 
         {/* Trustindex Google Reviews Widget */}
-        <div className="flex justify-center">
-          <div 
-            className="w-full max-w-4xl [&_.ti-widget]:!bg-transparent [&_.ti-widget]:!border-none [&_.ti-review-item]:!bg-navy-light/50 [&_.ti-review-item]:!border [&_.ti-review-item]:!border-silver/10 [&_.ti-review-item]:!rounded-xl"
-          />
-        </div>
+        <div 
+          className="flex justify-center"
+          dangerouslySetInnerHTML={{
+            __html: '<div class="trustindex-widget" data-src="https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319"></div>'
+          }}
+        />
       </div>
     </section>
   );
