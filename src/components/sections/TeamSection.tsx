@@ -5,35 +5,31 @@ interface TeamMemberProps {
   role: string;
   description: string;
   imageUrl?: string;
-  delay: string;
 }
 
-const TeamMember = ({ name, role, description, imageUrl, delay }: TeamMemberProps) => (
-  <div className={`text-center opacity-0 animate-fade-up ${delay}`}>
+const TeamMember = ({ name, role, description, imageUrl }: TeamMemberProps) => (
+  <div className="bg-navy-light/50 rounded-xl p-6 lg:p-8 border border-silver/10 hover:border-silver/20 transition-colors">
     {/* Photo Container */}
-    <div className="w-32 h-32 lg:w-40 lg:h-40 mx-auto mb-6 rounded-full overflow-hidden border-2 border-silver/40 bg-navy-light">
+    <div className="w-20 h-20 lg:w-24 lg:h-24 mx-auto mb-5 rounded-full overflow-hidden border-2 border-silver/30 bg-navy">
       {imageUrl ? (
         <img
           src={imageUrl}
-          alt={`${name} - ${role} - Engenheiro civil em Barbacena MG`}
+          alt={`${name} - ${role}`}
           className="w-full h-full object-cover"
           loading="lazy"
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center">
-          <User className="w-16 h-16 text-silver/50" aria-hidden="true" />
+          <User className="w-10 h-10 lg:w-12 lg:h-12 text-silver/50" aria-hidden="true" />
         </div>
       )}
     </div>
 
     {/* Info */}
-    <h3 className="font-sans text-xl lg:text-2xl font-semibold text-foreground mb-2">
+    <h3 className="font-montserrat text-lg lg:text-xl font-semibold text-foreground mb-3 text-center">
       {name}
     </h3>
-    <p className="text-silver font-medium mb-3">
-      {role}
-    </p>
-    <p className="text-silver/70 text-sm max-w-xs mx-auto leading-relaxed">
+    <p className="font-montserrat text-silver/80 text-sm leading-relaxed text-center line-clamp-3 lg:line-clamp-2">
       {description}
     </p>
   </div>
@@ -42,45 +38,42 @@ const TeamMember = ({ name, role, description, imageUrl, delay }: TeamMemberProp
 const TeamSection = () => {
   const team = [
     {
-      name: "Gustavo Armando dos Santos",
-      role: "Diretor Técnico",
-      description: "Engenheiro civil responsável por laudos técnicos, vistorias estruturais e avaliação de imóveis em Barbacena – MG.",
+      name: "Gustavo Santos – Engenheiro Civil",
+      description: "Especialista em contenções e estabilidade de taludes, perito credenciado e engenheiro avaliador. Atuou em obras relevantes, incluindo o projeto de contenção do Morro da Forca em Ouro Preto.",
       imageUrl: undefined,
     },
     {
-      name: "Engenheiro Sênior",
-      role: "Especialista Estrutural",
-      description: "Especialista em análises estruturais e laudos periciais de engenharia civil.",
+      name: "Lucas de Sá – Engenheiro Mecânico e Civil",
+      description: "Engenheiro com formação em Mecânica, Segurança do Trabalho e Civil. Doutorando em Estruturas pela UFJF, com atuação técnica em análise e comportamento estrutural.",
       imageUrl: undefined,
     },
     {
-      name: "Especialista em Inspeções",
-      role: "Técnico de Campo",
-      description: "Apoio em inspeções de campo e preparação de relatórios técnicos.",
+      name: "Djalmir Silva – Arquiteto e Urbanista",
+      description: "Arquiteto e urbanista, capitão da reserva da Aeronáutica e consultor do IPHAN, com atuação em patrimônio, fiscalização e gestão de intervenções urbanas.",
       imageUrl: undefined,
     },
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-navy">
+    <section className="py-16 lg:py-20 bg-navy">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 opacity-0 animate-fade-up">
+        <div className="text-center mb-12">
+          <h2 className="font-montserrat text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Nossa Equipe
           </h2>
-          <p className="text-silver max-w-2xl mx-auto opacity-0 animate-fade-up animation-delay-100">
-            Engenheiros civis especializados em laudos e perícias.
+          <p className="font-montserrat text-silver max-w-xl mx-auto">
+            Profissionais especializados em laudos e perícias técnicas.
           </p>
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:gap-16 max-w-4xl mx-auto">
-          {team.map((member, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          {team.map((member) => (
             <TeamMember
               key={member.name}
               {...member}
-              delay={`animation-delay-${(index + 2) * 100}`}
+              role=""
             />
           ))}
         </div>
