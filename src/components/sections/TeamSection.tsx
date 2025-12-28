@@ -26,10 +26,13 @@ const TeamMember = ({ name, role, description, imageUrl }: TeamMemberProps) => (
     </div>
 
     {/* Info */}
-    <h3 className="font-montserrat text-lg lg:text-xl font-semibold text-foreground mb-3 text-center">
+    <h3 className="font-montserrat text-lg lg:text-xl font-semibold text-foreground mb-1 text-center">
       {name}
     </h3>
-    <p className="font-montserrat text-silver/80 text-sm leading-relaxed text-center line-clamp-3 lg:line-clamp-2">
+    <p className="font-montserrat text-xs text-silver/60 mb-3 text-center">
+      {role}
+    </p>
+    <p className="font-montserrat text-silver/80 text-sm leading-relaxed text-center">
       {description}
     </p>
   </div>
@@ -38,17 +41,20 @@ const TeamMember = ({ name, role, description, imageUrl }: TeamMemberProps) => (
 const TeamSection = () => {
   const team = [
     {
-      name: "Gustavo Santos – Engenheiro Civil",
+      name: "Gustavo Santos",
+      role: "Engenheiro Civil",
       description: "Especialista em contenções e estabilidade de taludes, perito credenciado e engenheiro avaliador. Atuou em obras relevantes, incluindo o projeto de contenção do Morro da Forca em Ouro Preto.",
       imageUrl: undefined,
     },
     {
-      name: "Lucas de Sá – Engenheiro Mecânico e Civil",
+      name: "Lucas de Sá",
+      role: "Engenheiro Mecânico e Civil",
       description: "Engenheiro com formação em Mecânica, Segurança do Trabalho e Civil. Doutorando em Estruturas pela UFJF, com atuação técnica em análise e comportamento estrutural.",
       imageUrl: undefined,
     },
     {
-      name: "Djalmir Silva – Arquiteto e Urbanista",
+      name: "Djalmir Silva",
+      role: "Arquiteto e Urbanista",
       description: "Arquiteto e urbanista, capitão da reserva da Aeronáutica e consultor do IPHAN, com atuação em patrimônio, fiscalização e gestão de intervenções urbanas.",
       imageUrl: undefined,
     },
@@ -73,7 +79,6 @@ const TeamSection = () => {
             <TeamMember
               key={member.name}
               {...member}
-              role=""
             />
           ))}
         </div>
