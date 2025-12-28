@@ -15,8 +15,8 @@ const LocationSection = () => {
 
   const phoneNumber = "5531982162913";
 
-  // Google Maps embed URL for Barbacena - MG
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59582.89599567812!2d-43.8097437!3d-21.2257539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa30e7d79c4bddf%3A0x5c7c0c6c66a0e72c!2sBarbacena%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr";
+  // Google Maps embed URL for Harpia Consultoria
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2755886244795!2d-43.77136602517241!3d-21.22106728047683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48f68e2270d524ab%3A0x46b16dd914564611!2sHarpia%20Consultoria%20-%20Engenharia%20e%20Laudos%20T%C3%A9cnicos!5e1!3m2!1spt-BR!2sbr!4v1766934582184!5m2!1spt-BR!2sbr";
 
   const contactInfo = [
     {
