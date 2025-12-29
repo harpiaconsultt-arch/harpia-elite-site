@@ -240,3 +240,14 @@
     animation-delay: 0.5s;
   }
 }
+
+/* Force Trustindex widget to only appear inside the testimonials section */
+body > div[class*="trustindex"]:not(#root *),
+body > [class*="trustindex"]:not(#root *) {
+  display: none !important;
+}
+
+/* Ensure footer is the last visible element */
+footer + * {
+  display: none !important;
+}
