@@ -1,8 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const TestimonialsSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    // Load Trustindex widget script
+    if (!containerRef.current) return;
+    
+    // Check if script already exists
     const existingScript = document.querySelector(
       'script[src*="cdn.trustindex.io"]'
     );
@@ -12,7 +16,7 @@ const TestimonialsSection = () => {
       script.src = "https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319";
       script.async = true;
       script.defer = true;
-      document.body.appendChild(script);
+      containerRef.current.appendChild(script);
     }
   }, []);
 
@@ -61,11 +65,14 @@ const TestimonialsSection = () => {
 
         {/* Trustindex Google Reviews Widget */}
         <div 
+          ref={containerRef}
           className="flex justify-center"
-          dangerouslySetInnerHTML={{
-            __html: '<div class="trustindex-widget" data-src="https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319"></div>'
-          }}
-        />
+        >
+          <div 
+            className="trustindex-widget" 
+            data-src="https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319"
+          />
+        </div>
       </div>
     </section>
   );
