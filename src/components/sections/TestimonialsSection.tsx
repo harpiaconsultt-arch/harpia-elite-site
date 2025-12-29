@@ -1,23 +1,34 @@
 import { useEffect, useRef } from "react";
 
 const TestimonialsSection = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    // Remove any existing Trustindex widgets from document body
+    const existingWidgets = document.querySelectorAll('body > .trustindex-widget-container, body > [class*="trustindex"]');
+    existingWidgets.forEach(widget => widget.remove());
     
-    // Check if script already exists
-    const existingScript = document.querySelector(
-      'script[src*="cdn.trustindex.io"]'
-    );
-    
-    if (!existingScript) {
+    // Remove any Trustindex scripts from body
+    const existingScripts = document.querySelectorAll('script[src*="trustindex"]');
+    existingScripts.forEach(script => script.remove());
+
+    // Load script only inside our container
+    if (widgetRef.current) {
       const script = document.createElement("script");
       script.src = "https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319";
       script.async = true;
-      script.defer = true;
-      containerRef.current.appendChild(script);
+      widgetRef.current.appendChild(script);
     }
+
+    // Cleanup on unmount
+    return () => {
+      const widgets = document.querySelectorAll('[class*="trustindex"]');
+      widgets.forEach(widget => {
+        if (!widget.closest('#depoimentos')) {
+          widget.remove();
+        }
+      });
+    };
   }, []);
 
   // JSON-LD structured data for SEO
@@ -63,16 +74,11 @@ const TestimonialsSection = () => {
           </p>
         </header>
 
-        {/* Trustindex Google Reviews Widget */}
+        {/* Trustindex Google Reviews Widget Container */}
         <div 
-          ref={containerRef}
-          className="flex justify-center"
-        >
-          <div 
-            className="trustindex-widget" 
-            data-src="https://cdn.trustindex.io/loader.js?c60e62361b0324244f566dcd319"
-          />
-        </div>
+          ref={widgetRef}
+          className="flex justify-center trustindex-container"
+        />
       </div>
     </section>
   );
