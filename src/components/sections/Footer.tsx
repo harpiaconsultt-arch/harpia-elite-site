@@ -3,7 +3,7 @@ import { Linkedin, Instagram, Mail } from "lucide-react";
 const Footer = () => {
   const socialLinks = [
     { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn", ariaLabel: "Visite nosso LinkedIn" },
-    { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram", ariaLabel: "Visite nosso Instagram" },
+    { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/eng.harpiaconsultoria", label: "Instagram", ariaLabel: "Visite nosso Instagram" },
     { icon: <Mail className="w-5 h-5" />, href: "mailto:contato@harpiaconsultoria.eng.br", label: "Email", ariaLabel: "Envie um e-mail" },
   ];
 

@@ -7,6 +7,7 @@ import MethodologySection from "@/components/sections/MethodologySection";
 import FAQSection from "@/components/sections/FAQSection";
 import TeamSection from "@/components/sections/TeamSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import ResourcesSection from "@/components/sections/ResourcesSection";
 import LocationSection from "@/components/sections/LocationSection";
 import Footer from "@/components/sections/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -60,6 +61,12 @@ const Index = () => {
         <AnimatedSection>
           <div id="depoimentos">
             <TestimonialsSection />
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <div id="recursos">
+            <ResourcesSection />
           </div>
         </AnimatedSection>
         

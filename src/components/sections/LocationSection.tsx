@@ -13,21 +13,22 @@ const LocationSection = () => {
     mensagem: "",
   });
 
-  const phoneNumber = "5531982162913";
+  const phoneNumber = "5532982162913";
 
-  // Google Maps embed URL for Harpia Consultoria
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2755886244795!2d-43.77136602517241!3d-21.22106728047683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48f68e2270d524ab%3A0x46b16dd914564611!2sHarpia%20Consultoria%20-%20Engenharia%20e%20Laudos%20T%C3%A9cnicos!5e1!3m2!1spt-BR!2sbr!4v1766934582184!5m2!1spt-BR!2sbr";
+  // Google Maps embed URL - centered on Harpia Consultoria location
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-43.7713660!3d-21.2210673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48f68e2270d524ab%3A0x46b16dd914564611!2sHarpia%20Consultoria%20-%20Engenharia%20e%20Laudos%20T%C3%A9cnicos!5e0!3m2!1spt-BR!2sbr!4v1766934582184!5m2!1spt-BR!2sbr";
 
   const contactInfo = [
     {
       icon: <MapPin className="w-5 h-5" aria-hidden="true" />,
       label: "Endereço",
-      value: "Avenida Olegário Maciel, 470, Centro\nBarbacena – MG | CEP 36200-082",
+      value: "Rua Olegário Maciel, 470, Centro\nBarbacena – MG | CEP 36200-082",
     },
     {
       icon: <Phone className="w-5 h-5" aria-hidden="true" />,
       label: "Telefone",
-      value: "(31) 98216-2913",
+      value: "(32) 98216-2913",
+      href: "https://g.page/harpiaconsultoria",
     },
     {
       icon: <Mail className="w-5 h-5" aria-hidden="true" />,
@@ -37,7 +38,7 @@ const LocationSection = () => {
     {
       icon: <Clock className="w-5 h-5" aria-hidden="true" />,
       label: "Horário de Atendimento",
-      value: "Segunda a Sexta: 8h às 18h\nSábado: 9h às 13h",
+      value: "Segunda a Sexta: 8h às 18h\nSábado: Atendimento Online / Plantão",
     },
   ];
 

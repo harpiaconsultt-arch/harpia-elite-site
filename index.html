@@ -29,12 +29,17 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Harpia Consultoria",
-        "description": "Laudos técnicos e periciais de engenharia civil em Barbacena – MG",
+        "description": "Laudos técnicos e periciais de engenharia civil em Barbacena – MG. Especialistas em vistorias, perícias judiciais e avaliações de imóveis.",
         "url": "https://harpiaconsultoria.com.br",
-        "telephone": "(31) 98216-2913",
+        "telephone": "+55-32-98216-2913",
+        "image": "https://harpiaconsultoria.com.br/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/eng.harpiaconsultoria",
+          "https://g.page/harpiaconsultoria"
+        ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Avenida Olegário Maciel, 470, Centro",
+          "streetAddress": "Rua Olegário Maciel, 470, Centro",
           "addressLocality": "Barbacena",
           "addressRegion": "MG",
           "postalCode": "36200-082",
@@ -53,8 +58,27 @@
             "name": "Minas Gerais"
           }
         },
-        "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-13:00"],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00",
+            "description": "Atendimento online / Plantão"
+          }
+        ],
         "priceRange": "$$$",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "15"
+        },
         "serviceType": [
           "Laudo Técnico de Engenharia Civil",
           "Laudo Pericial de Engenharia Civil",
