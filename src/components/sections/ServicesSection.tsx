@@ -40,34 +40,34 @@ const ServiceCard = ({ icon, title, description, isHighlighted, delay }: Service
   </div>
 );
 
-const ServicesSection = () => {
-  const services = [
-    {
-      icon: <FileText className="w-10 h-10" aria-hidden="true" />,
-      title: "Laudos Técnicos de Engenharia Civil",
-      description: "Laudo técnico e relatório técnico para regularização, reformas, comprovação de estabilidade e atendimento a órgãos públicos.",
-      isHighlighted: false,
-    },
-    {
-      icon: <Building className="w-10 h-10" aria-hidden="true" />,
-      title: "Vistorias e Avaliação de Imóveis",
-      description: "Vistoria técnica e laudo de avaliação de imóvel para compra/venda, financiamentos, seguros e atualização patrimonial.",
-      isHighlighted: true,
-    },
-    {
-      icon: <Landmark className="w-10 h-10" aria-hidden="true" />,
-      title: "Laudos para Caixa e Bancos",
-      description: "Laudo de engenharia para Caixa, Banco do Brasil e demais instituições financeiras, conforme critérios técnicos exigidos.",
-      isHighlighted: false,
-    },
-    {
-      icon: <Scale className="w-10 h-10" aria-hidden="true" />,
-      title: "Perícias Judiciais",
-      description: "Laudo pericial de engenharia civil para ações judiciais e extrajudiciais, conflitos construtivos e vícios em obras.",
-      isHighlighted: false,
-    },
-  ];
+const services = [
+  {
+    icon: <FileText className="w-10 h-10" aria-hidden="true" />,
+    title: "Laudos Técnicos de Engenharia Civil",
+    description: "Laudo técnico e relatório técnico para regularização, reformas, comprovação de estabilidade e atendimento a órgãos públicos.",
+    isHighlighted: false,
+  },
+  {
+    icon: <Building className="w-10 h-10" aria-hidden="true" />,
+    title: "Vistorias e Avaliação de Imóveis",
+    description: "Vistoria técnica e laudo de avaliação de imóvel para compra/venda, financiamentos, seguros e atualização patrimonial.",
+    isHighlighted: true,
+  },
+  {
+    icon: <Landmark className="w-10 h-10" aria-hidden="true" />,
+    title: "Laudos para Caixa e Bancos",
+    description: "Laudo de engenharia para Caixa, Banco do Brasil e demais instituições financeiras, conforme critérios técnicos exigidos.",
+    isHighlighted: false,
+  },
+  {
+    icon: <Scale className="w-10 h-10" aria-hidden="true" />,
+    title: "Perícias Judiciais",
+    description: "Laudo pericial de engenharia civil para ações judiciais e extrajudiciais, conflitos construtivos e vícios em obras.",
+    isHighlighted: false,
+  },
+];
 
+const ServicesSection = () => {
   return (
     <section className="py-16 lg:py-24 bg-navy">
       <div className="container mx-auto px-6 lg:px-12">
