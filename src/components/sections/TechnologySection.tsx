@@ -23,25 +23,25 @@ const TechCard = ({ icon, title, description, delay }: TechCardProps) => (
   </div>
 );
 
-const TechnologySection = () => {
-  const technologies = [
-    {
-      icon: <Scan className="w-8 h-8" aria-hidden="true" />,
-      title: "Análise Não Destrutiva",
-      description: "Ensaios não destrutivos (ultrassom, esclerometria) para laudos técnicos e vistorias estruturais.",
-    },
-    {
-      icon: <Radar className="w-8 h-8" aria-hidden="true" />,
-      title: "Varredura a Laser 3D",
-      description: "Modelagem 3D para identificação de deformações em laudos periciais e perícias judiciais.",
-    },
-    {
-      icon: <Thermometer className="w-8 h-8" aria-hidden="true" />,
-      title: "Termografia Infravermelha",
-      description: "Detecção de umidade e infiltrações para vistorias e avaliações de imóveis completas.",
-    },
-  ];
+const technologies = [
+  {
+    icon: <Scan className="w-8 h-8" aria-hidden="true" />,
+    title: "Análise Não Destrutiva",
+    description: "Ensaios não destrutivos (ultrassom, esclerometria) para laudos técnicos e vistorias estruturais.",
+  },
+  {
+    icon: <Radar className="w-8 h-8" aria-hidden="true" />,
+    title: "Varredura a Laser 3D",
+    description: "Modelagem 3D para identificação de deformações em laudos periciais e perícias judiciais.",
+  },
+  {
+    icon: <Thermometer className="w-8 h-8" aria-hidden="true" />,
+    title: "Termografia Infravermelha",
+    description: "Detecção de umidade e infiltrações para vistorias e avaliações de imóveis completas.",
+  },
+];
 
+const TechnologySection = () => {
   return (
     <section className="py-16 lg:py-24 bg-off-white">
       <div className="container mx-auto px-6 lg:px-12">

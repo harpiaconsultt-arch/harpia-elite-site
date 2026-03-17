@@ -1,0 +1,3 @@
+## 2025-05-22 - [Performance Optimization: Scroll Listener & Static Data Hoisting]
+**Learning:** In React components that render large sets of static data (like FAQ or Services grids), defining those arrays inside the component causes them to be re-allocated on every render. Hoisting them to the module scope is a simple but effective memory optimization. For scroll listeners, using `requestAnimationFrame` with `{ passive: true }` ensures that scrolling remains smooth by not blocking the main thread.
+**Action:** Always check if data arrays in section components can be moved outside the component. When using scroll listeners, prioritize `passive: true` and `requestAnimationFrame`.

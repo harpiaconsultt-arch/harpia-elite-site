@@ -1,52 +1,52 @@
 import { FileText, Download, ArrowRight, BookOpen, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const blogArticles = [
+  {
+    title: "O que é um Laudo Técnico de Engenharia Civil?",
+    description: "Entenda a diferença entre laudo, parecer e relatório técnico e quando cada um é necessário.",
+    readTime: "5 min",
+    href: "#",
+  },
+  {
+    title: "Laudo de Avaliação de Imóveis: Guia Completo",
+    description: "Saiba como funciona a avaliação de imóveis e quais fatores influenciam no valor.",
+    readTime: "7 min",
+    href: "#",
+  },
+  {
+    title: "Perícia Judicial: Como Funciona o Processo",
+    description: "Conheça as etapas de uma perícia judicial e a importância do laudo pericial.",
+    readTime: "6 min",
+    href: "#",
+  },
+  {
+    title: "Vistoria Cautelar de Vizinhança: Por que é Importante?",
+    description: "Proteja seu patrimônio durante obras vizinhas com uma vistoria preventiva.",
+    readTime: "4 min",
+    href: "#",
+  },
+];
+
+const pdfGuides = [
+  {
+    title: "Checklist: Documentos para Laudo Técnico",
+    description: "Lista completa de documentos necessários para solicitar seu laudo.",
+    fileName: "checklist-laudo-tecnico.pdf",
+  },
+  {
+    title: "Guia: Tipos de Laudos de Engenharia",
+    description: "Conheça os principais tipos de laudos e quando utilizar cada um.",
+    fileName: "guia-tipos-laudos.pdf",
+  },
+  {
+    title: "Manual: Preparação para Vistoria",
+    description: "Como se preparar para a vistoria técnica do seu imóvel.",
+    fileName: "manual-vistoria.pdf",
+  },
+];
+
 const ResourcesSection = () => {
-  const blogArticles = [
-    {
-      title: "O que é um Laudo Técnico de Engenharia Civil?",
-      description: "Entenda a diferença entre laudo, parecer e relatório técnico e quando cada um é necessário.",
-      readTime: "5 min",
-      href: "#",
-    },
-    {
-      title: "Laudo de Avaliação de Imóveis: Guia Completo",
-      description: "Saiba como funciona a avaliação de imóveis e quais fatores influenciam no valor.",
-      readTime: "7 min",
-      href: "#",
-    },
-    {
-      title: "Perícia Judicial: Como Funciona o Processo",
-      description: "Conheça as etapas de uma perícia judicial e a importância do laudo pericial.",
-      readTime: "6 min",
-      href: "#",
-    },
-    {
-      title: "Vistoria Cautelar de Vizinhança: Por que é Importante?",
-      description: "Proteja seu patrimônio durante obras vizinhas com uma vistoria preventiva.",
-      readTime: "4 min",
-      href: "#",
-    },
-  ];
-
-  const pdfGuides = [
-    {
-      title: "Checklist: Documentos para Laudo Técnico",
-      description: "Lista completa de documentos necessários para solicitar seu laudo.",
-      fileName: "checklist-laudo-tecnico.pdf",
-    },
-    {
-      title: "Guia: Tipos de Laudos de Engenharia",
-      description: "Conheça os principais tipos de laudos e quando utilizar cada um.",
-      fileName: "guia-tipos-laudos.pdf",
-    },
-    {
-      title: "Manual: Preparação para Vistoria",
-      description: "Como se preparar para a vistoria técnica do seu imóvel.",
-      fileName: "manual-vistoria.pdf",
-    },
-  ];
-
   const handleDownload = (fileName: string) => {
     // In production, this would link to actual PDF files
     const phoneNumber = "5532982162913";
