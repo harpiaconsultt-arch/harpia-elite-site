@@ -41,6 +41,12 @@ const Header = () => {
           : "bg-transparent py-6"
       }`}
     >
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-silver focus:text-navy focus:rounded-md focus:font-semibold focus:shadow-lg transition-all"
+      >
+        Pular para o conteúdo
+      </a>
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -71,9 +77,11 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden text-foreground p-2"
+            className="lg:hidden text-foreground p-2 focus-visible:ring-2 focus-visible:ring-silver focus-visible:outline-none rounded-md"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -81,7 +89,10 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden mt-6 pb-4 border-t border-silver/20 pt-6">
+          <nav
+            id="mobile-menu"
+            className="lg:hidden mt-6 pb-4 border-t border-silver/20 pt-6"
+          >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button
