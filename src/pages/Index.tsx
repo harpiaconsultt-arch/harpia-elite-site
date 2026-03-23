@@ -16,62 +16,68 @@ import AnimatedSection from "@/components/AnimatedSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-navy focus:p-4 focus:rounded-md focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-silver transition-all duration-200"
+      >
+        Pular para o conteúdo principal
+      </a>
       <Header />
       <WhatsAppButton />
       
-      <main>
+      <main id="main-content" tabIndex={-1} className="outline-none">
         <HeroSection />
         
         <AnimatedSection>
-          <div id="tecnologia">
+          <div id="tecnologia" className="scroll-mt-24">
             <TechnologySection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="servicos">
+          <div id="servicos" className="scroll-mt-24">
             <ServicesSection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="tipos-laudos">
+          <div id="tipos-laudos" className="scroll-mt-24">
             <ReportTypesSection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="metodologia">
+          <div id="metodologia" className="scroll-mt-24">
             <MethodologySection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="faq">
+          <div id="faq" className="scroll-mt-24">
             <FAQSection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="equipe">
+          <div id="equipe" className="scroll-mt-24">
             <TeamSection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="depoimentos">
+          <div id="depoimentos" className="scroll-mt-24">
             <TestimonialsSection />
           </div>
         </AnimatedSection>
 
         <AnimatedSection>
-          <div id="recursos">
+          <div id="recursos" className="scroll-mt-24">
             <ResourcesSection />
           </div>
         </AnimatedSection>
         
         <AnimatedSection>
-          <div id="contato">
+          <div id="contato" className="scroll-mt-24">
             <LocationSection />
           </div>
         </AnimatedSection>
