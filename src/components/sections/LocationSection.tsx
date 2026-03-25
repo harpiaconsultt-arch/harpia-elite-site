@@ -152,6 +152,7 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
                         value={formData.nome}
                         onChange={handleInputChange}
                         maxLength={100}
+                        autoComplete="name"
                         required
                         className="bg-navy-light border-silver/20 text-foreground placeholder:text-silver/50 focus:border-silver/40 h-12"
                         aria-label="Nome completo"
@@ -170,6 +171,7 @@ Gostaria de solicitar um orçamento para laudo técnico de engenharia.`;
                         value={formData.telefone}
                         onChange={handleInputChange}
                         maxLength={20}
+                        autoComplete="tel"
                         required
                         className="bg-navy-light border-silver/20 text-foreground placeholder:text-silver/50 focus:border-silver/40 h-12"
                         aria-label="Telefone para contato"

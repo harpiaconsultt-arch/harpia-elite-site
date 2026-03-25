@@ -1,0 +1,3 @@
+## 2026-03-25 - [Accessibility: Skip Link & Form Autofill]
+**Learning:** This landing page lacked a "Skip to Content" link, which is essential for keyboard-only and screen reader navigation to bypass the header navigation. Additionally, providing standard `autoComplete` attributes on the location/contact form significantly reduces friction for mobile users and those with cognitive disabilities.
+**Action:** Always include a visually-hidden-until-focused "Skip to Content" link targeting `#main-content` on primary landing pages. Ensure all contact form inputs have appropriate `autoComplete` values (`name`, `tel`, `email`).
