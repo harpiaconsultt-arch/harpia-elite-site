@@ -1,0 +1,3 @@
+## 2026-04-01 - Keyboard Accessibility: Skip to Content Link
+**Learning:** For landing pages with fixed headers or extensive navigation, a "Skip to Content" link is the first requirement for keyboard and screen reader accessibility. It must be the first focusable element, visually hidden until focused, and target a container with `tabIndex={-1}` and `outline-none` to ensure reliable focus management without unwanted focus rings.
+**Action:** Always include a `.skip-to-content` link as the first child of the main layout/root component and ensure the `<main>` element is properly configured as the target.
