@@ -16,10 +16,13 @@ import AnimatedSection from "@/components/AnimatedSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <a href="#main-content" className="skip-to-content">
+        Pular para o conteúdo principal
+      </a>
       <Header />
       <WhatsAppButton />
       
-      <main>
+      <main id="main-content" tabIndex={-1} className="outline-none">
         <HeroSection />
         
         <AnimatedSection>
