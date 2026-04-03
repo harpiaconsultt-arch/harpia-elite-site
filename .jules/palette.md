@@ -1,0 +1,3 @@
+## 2025-05-15 - [Acessibilidade e Navegação em Landing Pages]
+**Learning:** Em landing pages com cabeçalhos fixos, a navegação por links internos (âncoras) frequentemente faz com que o conteúdo do destino seja ocultado pelo cabeçalho. Além disso, a ausência de um link "Pular para o conteúdo" prejudica usuários de teclado que precisam passar por todos os itens de menu repetidamente.
+**Action:** Sempre incluir um link de salto (Skip to content) como o primeiro elemento focável, direcionando para um ID no `<main>` com `tabIndex={-1}`. Aplicar `scroll-mt-24` (ou valor correspondente à altura do header) em todos os alvos de âncoras para garantir visibilidade pós-navegação.
