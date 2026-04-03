@@ -41,6 +41,12 @@ const Header = () => {
           : "bg-transparent py-6"
       }`}
     >
+      <a
+        href="#main-content"
+        className="absolute left-4 top-4 z-[60] -translate-y-20 bg-primary text-primary-foreground px-4 py-2 rounded-md transition-transform focus:translate-y-0 sr-only focus:not-sr-only"
+      >
+        Pular para o conteúdo
+      </a>
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between">
           {/* Logo */}
